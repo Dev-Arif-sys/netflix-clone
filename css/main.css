@@ -18,7 +18,7 @@ body{
     
 }
 header{
-    background:radial-gradient( rgba(17, 17, 17, 0.02) 20%, rgba(5, 2, 2, 0.85) 80%), url(img/background.jpg);
+    background:radial-gradient( rgba(17, 17, 17, 0.02) 20%, rgba(5, 2, 2, 0.85) 80%), url(../img/background.jpg);
     background-repeat: no-repeat;
     background-position: 50% 30%;
     background-size: cover;
