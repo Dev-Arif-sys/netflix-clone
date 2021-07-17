@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700&display=swap');
+
+:root{
+    --red:#E50914;
+    --white:#FFFFFF;
+    --black:#000000;
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+body{
+    font-family:  sans-serif;
+    
+}
+header{
+    background:radial-gradient( rgba(17, 17, 17, 0.02) 20%, rgba(5, 2, 2, 0.85) 80%), url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+    height: 95vh;
+    margin-top: 0;
+}
+
+
+main,footer{
+    background-color:var(--black) ;
+}
+h2{
+    color: var(--white);
+    font-size: 3rem;
+}
+
+h3{
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 1em;
+}
+
+hr{
+    border: .3em solid #222222;
+}
+
+/* nav styles */
+.nav{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .nav__img{
+    width: 180px;
+}
+.nav__btn{
+    text-decoration: none;
+    padding: .3em 1.4em;
+    border-radius: 5px;
+  
+}
+.btn--red{
+    color:var(--white) ;
+    background-color: var(--red);
+}
+
+
+/* header text style */
+
+.header__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+    width: 100%;
+    /* justify-content: center; */
+   height: 90%;
+}
+
+.big__heading{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.sub__heading{
+    font-size: 1.7rem;
+    color: var(--white);
+    font-weight: 300;
+    margin: 1em;
+}
+
+.header__text p{
+    font-size: 1.2rem;
+    color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.header__CTA{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 100%;
+}
+
+
+.header__CTA--input{
+  padding: 2em 1em;
+  display: inline-block;
+  
+  width: 40%;
+}
+.header__CTA--btn{
+    padding: .6em 1em; 
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+/* enjoyTV styles */
+
+.container{
+    width: 80%;
+    padding: 2em 1em;
+    margin: 0 auto;
+}
+.flex__item{
+    flex-basis: 45%;
+}
+
+.enjoyTV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.enjoyTV__img img{
+    width: 90%;
+    max-width: 450px;
+}
+
+
+/* --------------
+offline style
+-------------- */
+.offline{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.offline__img img{
+    width: 90%;
+    max-width: 450px;
+}
+
+/*-------------
+
+everywhere-design
+
+--------------*/
+
+.everywhere{
+    display: flex;
+    
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+}
+
+/* kids style */
+
+.kids{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.kids__img img{
+    width: 90%;
+    max-width: 450px;
+}
+
+
+/* ----------------
+faq style 
+-----------------*/
+
+.FAQ{
+    text-align: center;
+    padding: 3em 0;
+}
+.faq__heading{
+    margin-bottom: 2em;
+}
+.question{
+    background-color: #303030;
+    width: 560px;
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 1.5em 0;
+}
+.question p{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.cta{
+    margin-top: 5em;
+}
+.cta p{
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+
+/* footer design */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.column a{
+    text-decoration: none;
+    display: block;
+    color:#c7c5c5;
+    font-size: .8em;
+    margin-top: .4em;
+}
+
+@media only screen and (max-width:688px) {
+    .nav .nav__img{
+        width: 100px;
+    }
+    .header__text{
+        text-align: center;
+    }
+    .big__heading{
+        font-size: 1.5rem;
+    }
+    .sub__heading{
+     font-size: 1.5em;
+    }
+    .header__text p{
+        font-size: 1em;
+
+    }
+
+    .header__CTA{
+        flex-direction: column;
+    }
+    .header__CTA--input{
+        width: 90%;
+        padding: 1.3em 0;
+    }
+    .header__CTA--btn{
+        
+        font-size: 1.4em;
+        margin-top: 1em;
+    }
+
+    .enjoyTV{
+        flex-direction: column;
+        text-align: center;
+    }
+    .offline,.kids{
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .everywhere{
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+    h2{
+      font-size: 1.5rem; 
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+    .footer{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 1.5em;
+    }
+   
+   
+}
